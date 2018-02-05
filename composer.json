@@ -1,0 +1,12 @@
+{
+  "name":"GreenRiverDev/328/Dating Site",
+  "authors": [
+    {
+      "name": "bobby Kingsada",
+      "email": "bkingsada@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
