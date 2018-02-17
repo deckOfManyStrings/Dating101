@@ -1,4 +1,9 @@
 <?php
+
+/**
+ * Class Member
+ * This class creates a basic member account and contains all basic information
+ */
 class Member
 {
     protected $fname;
@@ -10,6 +15,15 @@ class Member
     protected $state;
     protected $seeking;
     protected $bio;
+
+    /**
+     * Member constructor.
+     * @param $fname profile user's first name
+     * @param $lname profile user's last name
+     * @param $age profile user's age
+     * @param $gender profile user's gender
+     * @param $phone profile user's phone
+     */
     function __construct($fname, $lname, $age, $gender, $phone)
     {
         $this->fname = $fname;
@@ -18,13 +32,15 @@ class Member
         $this->gender = $gender;
         $this->phone = $phone;
     }
+
     /**
-     * @return mixed
+     * @return the first name of the user
      */
     public function getFname()
     {
         return $this->fname;
     }
+
     /**
      * @param mixed $fname
      */
@@ -32,13 +48,15 @@ class Member
     {
         $this->fname = $fname;
     }
+
     /**
-     * @return mixed
+     * @return the last name of the user
      */
     public function getLname()
     {
         return $this->lname;
     }
+
     /**
      * @param mixed $lname
      */
@@ -46,13 +64,15 @@ class Member
     {
         $this->lname = $lname;
     }
+
     /**
-     * @return mixed
+     * @return the age of the user
      */
     public function getAge()
     {
         return $this->age;
     }
+
     /**
      * @param mixed $age
      */
@@ -60,13 +80,15 @@ class Member
     {
         $this->age = $age;
     }
+
     /**
-     * @return mixed
+     * @return the gender of the user
      */
     public function getGender()
     {
         return $this->gender;
     }
+
     /**
      * @param mixed $gender
      */
@@ -74,13 +96,15 @@ class Member
     {
         $this->gender = $gender;
     }
+
     /**
-     * @return mixed
+     * @return the phone of the user
      */
     public function getPhone()
     {
         return $this->phone;
     }
+
     /**
      * @param mixed $phone
      */
@@ -88,13 +112,15 @@ class Member
     {
         $this->phone = $phone;
     }
+
     /**
-     * @return mixed
+     * @return the email of the user
      */
     public function getEmail()
     {
         return $this->email;
     }
+
     /**
      * @param mixed $email
      */
@@ -102,13 +128,15 @@ class Member
     {
         $this->email = $email;
     }
+
     /**
-     * @return mixed
+     * @return the state of the user
      */
     public function getState()
     {
         return $this->state;
     }
+
     /**
      * @param mixed $state
      */
@@ -116,13 +144,15 @@ class Member
     {
         $this->state = $state;
     }
+
     /**
-     * @return mixed
+     * @return the seeking of the user
      */
     public function getSeeking()
     {
         return $this->seeking;
     }
+
     /**
      * @param mixed $seeking
      */
@@ -130,13 +160,15 @@ class Member
     {
         $this->seeking = $seeking;
     }
+
     /**
-     * @return mixed
+     * @return the bio of the user
      */
     public function getBio()
     {
         return $this->bio;
     }
+
     /**
      * @param mixed $bio
      */
@@ -144,4 +176,7 @@ class Member
     {
         $this->bio = $bio;
     }
+
+
+
 }

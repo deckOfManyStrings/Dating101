@@ -1,9 +1,9 @@
 {
-  "name":"GreenRiverDev/328/Dating Site",
-  "authors": [
+  "name": "bkingsada/dating101",
+  "authors":[
     {
-      "name": "bobby Kingsada",
-      "email": "bkingsada@mail.greenriver.edu"
+      "name":"Bobby Kingsada",
+      "email":"bkingsada@mail.greenriver.edu"
     }
   ],
   "require": {

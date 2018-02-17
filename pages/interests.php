@@ -11,19 +11,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Dating</title>
+    <title>dating 101</title>
 </head>
 <body>
-<ol class="breadcrumb">
-    <li class="breadcrumb-item active">Dating</li>
-</ol>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../dating101/">dating101</a>
+</nav>
 
 <div class="container">
     <div class="card mx-auto" id="main">
         <div class="card-block">
             <h2>Interests</h2>
             <hr>
-            <form action="summary" method="post">
+            <form action="summary" method="post" enctype="multipart/form-data">
                 <div class="row h-100">
                     <div class="col-md-11 justify-content-start" id="formInfo">
                         <div class="form-group">

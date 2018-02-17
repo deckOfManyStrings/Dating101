@@ -16,6 +16,10 @@
     text-align: left;
 }
 
+#buttonArea {
+    height: 55%;
+}
+
 .card {
     width: 90%;
     margin-top: 30px;
@@ -48,14 +52,6 @@ label {
     left: 0;
 }
 
-#column2 {
-    height: 426px;
-}
-
-#buttonArea {
-    height: 50%;
-}
-
 #formInfo {
     min-height: 100%;
 }
@@ -81,4 +77,9 @@ label {
 
 .error {
     color: red;
+}
+
+.mute {
+    background: gainsboro;
+    color: grey;
 }
