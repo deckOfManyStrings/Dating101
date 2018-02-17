@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <titleDating</title>
+    <title>Dating</title>
 </head>
 <body>
 <ol class="breadcrumb">
@@ -25,7 +25,7 @@
             <div class="col-md-6 justify-content-start" >
                 <div class="card-block text-center mx-auto">
                     <h3 class="card-title">Dating</h3>
-                    <p class="card-text" id="summary">Welcome to the web's most successful dating website. At <strong>Lovify</strong> you'll meet another like minded individuals. We have the highest success rate of couples on the web. User's are matched by interest and location. Find out why so many others have found love on our site!</p>
+                    <p class="card-text" id="summary">Welcome to the web's most successful dating website. We have the highest success rate of couples on the web. User's are matched by interest and location. Find out why so many others have found love on our site!</p>
                     <h5 class="card-text">Here's what our users are saying about us.</h5>
                     <hr>
                     <div id="reviews">

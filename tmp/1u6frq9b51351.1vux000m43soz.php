@@ -26,32 +26,35 @@
                     <table class="table table-bordered">
                         <tbody>
                         <tr>
-                            <td>Name: {{ @SESSION['account']->getFname() }} {{ @SESSION['account']->getLname() }}</td>
+                            <td>Name: <?= ($SESSION['account']->getFname()) ?> <?= ($SESSION['account']->getLname()) ?></td>
                         </tr>
                         <tr>
-                            <td>Gender: {{ @SESSION['account']->getGender() }} </td>
+                            <td>Gender: <?= ($SESSION['account']->getGender()) ?> </td>
                         </tr>
                         <tr>
-                            <td>Age: {{ @SESSION['account']->getAge() }}</td>
+                            <td>Age: <?= ($SESSION['account']->getAge()) ?></td>
                         </tr>
                         <tr>
-                            <td>Phone: {{ @SESSION['account']->getPhone() }}</td>
+                            <td>Phone: <?= ($SESSION['account']->getPhone()) ?></td>
                         </tr>
                         <tr>
-                            <td>Email: {{ @SESSION['account']->getEmail() }}</td>
+                            <td>Email: <?= ($SESSION['account']->getEmail()) ?></td>
                         </tr>
                         <tr>
-                            <td>State: {{ @SESSION['account']->getState() }}</td>
+                            <td>State: <?= ($SESSION['account']->getState()) ?></td>
                         </tr>
                         <tr>
-                            <td>Seeking: {{ @SESSION['account']->getSeeking() }}</td>
+                            <td>Seeking: <?= ($SESSION['account']->getSeeking()) ?></td>
                         </tr>
-                        <tr class="{{ @muteClass }}">
-                            <td>Interests: <repeat group="{{ @SESSION['account']->getInDoorInterests() }}" value="{{ @indoorItem }}">
-                                    {{ trim(@indoorItem) }}
-                                </repeat> <repeat group="{{ @SESSION['account']->getOutDoorInterests() }}" value="{{ @outdoorItem }}">
-                                    {{ trim(@outdoorItem) }}
-                                </repeat>{{ @mute }}
+                        <tr class="<?= ($muteClass) ?>">
+                            <td>Interests: <?php foreach (($SESSION['account']->getInDoorInterests()?:[]) as $indoorItem): ?>
+                                    <?= (trim($indoorItem))."
+" ?>
+                                <?php endforeach; ?> <?php foreach (($SESSION['account']->getOutDoorInterests()?:[]) as $outdoorItem): ?>
+                                    <?= (trim($outdoorItem))."
+" ?>
+                                <?php endforeach; ?><?= ($mute)."
+" ?>
                             </td>
                         </tr>
                         </tbody>
@@ -62,7 +65,8 @@
                     <div class="container justify-content-center text-center">
                         <h3>Biography</h3>
                         <p>
-                            {{ @SESSION['account']->getBio() }}
+                            <?= ($SESSION['account']->getBio())."
+" ?>
                         </p>
                     </div>
                 </div>
